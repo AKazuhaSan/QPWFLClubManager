@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    background-image: url('other photo/leaves.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 10px 30px;
+    flex-direction: column;
+    height: 130px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar-logo {
+    height: 100px;
+    margin-right: 16px;
+}
+.school-name-block {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.school-cn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+.school-en {
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase;
+}
+.navbar-links {
+    display: flex;
+    margin-left: auto;
+}
+.navbar-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #242525;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbar-links a:hover {
+    color: #0056b3;
+}
+.breadcrumb {
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 30px;
+}
+.breadcrumb a {
+    color: #000000;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color:#005ec2
+}
+.breadcrumb span {
+    color: #000000;
+}
+.button {
+    display: inline-block;
+    background-color: #213cf1;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button:hover {
+    background-color: #388e3c;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333333;
+    margin: 40px 0 20px 0;
+    letter-spacing: 2px;
+}
+.notice-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.notice {
+    background-color: #ffffff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    line-height: 1.6;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.notice:hover {
+    transform: translateY(-3px);
+}
+
+.scroll-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+.fade-left, .fade-right {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, #f7f7f7, rgba(247, 247, 247, 0));
+}
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, #f7f7f7, rgba(247, 247, 247, 0));
+}
+.view-more {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.card {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.credit {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    font-style: italic;
+}
