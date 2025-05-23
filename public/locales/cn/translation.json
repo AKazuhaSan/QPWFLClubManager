@@ -1,9 +1,14 @@
 {
+    "home": "首页",
     "title": "首页-青浦世外高中社团管理",
     "offical": "学校官网",
     "detail": "社团详细",
     "notice": "公告栏",
     "idea": "意见箱",
     "anonymous": "匿名",
-    "model": "优秀社团"
+    "model": "优秀社团",
+    "creativity": "创意艺术",
+    "pe": "体育运动",
+    "social": "社会服务",
+    "academic": "学术类"
 }

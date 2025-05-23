@@ -10,47 +10,52 @@
   </head>
   <body>
     <script type="module" src="/src//scripts/i18n.ts"></script>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
-    <div class="navbar-top">
 
-    <div class="navbar-left">
-      <a href="https://qphs.shwfl.edu.cn/" target="_blank">
-        <img src="WFL-logo.png" alt="WFL Logo" class="navbar-logo">
-      </a>
-      
-      <div class="school-name-block">
-        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
-        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
-      </div>
-    </div>
-  
-      <a id="changeLanguage">EN/中文</a>
-      <a data-i18n="offical" href="https://qphs.shwfl.edu.cn/">校园官网</a>
-      
-      <li class="nav-item dropdown">
-        <a data-i18n="detail" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-     
-      <a data-i18n="idea" href="Suggestion.html">意见箱</a>
-    </nav>
-    </div>
-  </header> -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: fit-content;">
+    <div class="container-fluid" >
       <div class="navbar-left">
         <a href="https://qphs.shwfl.edu.cn/" target="_blank">
           <img src="WFL-logo.png" alt="WFL Logo" class="navbar-logo">
       </a>
 
-      <a data-i18n="offical" href="https://qphs.shwfl.edu.cn/" target="_blank"></a>
+      <div class="school-name-block">
+        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+      </div>
+
+      <div class="school-name-block" style="margin-left: 15px;">
+        <div class="school-cn">Codecraft</div>
+      </div>
+
+      <div class="vr" style="position: relative; margin: 32px;"></div>
+      
+      <button id="home" style="margin-right: 24px;" data-i18n="home" class="btn btn-sm btn-secondary"></button>
+
+      <button id="OfficalButton" style="margin-left: 24x;" class="btn btn-sm btn-secondary"  data-i18n="offical"></button>
+
+      <div class="btn-group" style="margin-left: 24px; ">
+        <button data-i18n="detail" class="btn btn-secondary btn-sm" type="button">
+        </button>
         
-      </a>
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+      
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" data-i18n="creativity" href="#"></a></li>
+          <li><a class="dropdown-item" data-i18n="pe" href="#"></a></li>
+          <li><a class="dropdown-item" data-i18n="social" href="#"></a></li>
+          <li><a class="dropdown-item" data-i18n="academic" href="#"></a></li>
+      </ul>
+      </div>
+
+      <button id="Suggestion" style="margin-left: 24px;" data-i18n="idea" class="btn btn-secondary btn-sm" type="button">
+      </button>
+
+      <button id="changeLanguage  " style="margin-left: 24px;" class="btn btn-secondary btn-sm" type="button">
+        中文/EN
+      </button>
+
     </div>
 
   </nav>

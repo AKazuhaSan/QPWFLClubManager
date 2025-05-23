@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -53,6 +54,7 @@ a {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
+    margin-right: 15px;
 }
 .school-cn {
     font-size: 18px;
@@ -96,19 +98,7 @@ a {
 .breadcrumb span {
     color: #000000;
 }
-.button {
-    display: inline-block;
-    background-color: #213cf1;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 14px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
+
 .button:hover {
     background-color: #388e3c;
 }
@@ -186,7 +176,6 @@ h1 {
     background-color: #007bff;
     color: white;
     padding: 6px 12px;
-    border-radius: 6px;
     text-decoration: none;
     font-size: 14px;
     white-space: nowrap;

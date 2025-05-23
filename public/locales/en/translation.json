@@ -1,9 +1,14 @@
 {
+    "home": "Home",
     "title": "Home - QPWFLHS Club Manager",
     "offical": "Official Website",
     "detail": "Detail",
     "notice": "Notice",
     "idea": "Suggestion",
     "anonymous": "Anonymous",
-    "model": "Excellent Clubs"
+    "model": "Excellent Clubs",
+    "creativity": "Creativity",
+    "pe": "Sports",
+    "social": "Social Service",
+    "academic": "Academic"
 }
