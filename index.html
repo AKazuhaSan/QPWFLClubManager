@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="stylesheet/main.css"/>
+    <script type="module" src="src/scripts/main.ts"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
@@ -13,7 +13,9 @@
     <div class="navbar-top">
 
     <div class="navbar-left">
-      <img src="WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      <a href="https://qphs.shwfl.edu.cn/" target="_blank">
+        <img src="WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      </a>
       <div class="school-name-block">
         <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
         <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
@@ -27,10 +29,6 @@
     </nav>
 
     </div>
-    
-    <nav class="breadcrumb">
-      <span>首页</span>
-    </nav>
   </header>
 
   <h1 data-i18n="notice">🪧公告栏</h1>
@@ -41,7 +39,7 @@
     <div class="notice">🔔 请各社团提交下学期计划</div>
   </div>
 
-  <h1>优秀社团</h1>
+  <h1 data-i18n="model">优秀社团</h1>
 
   <div id="ExClubs" class="tab-content active">
     <div class="scroll-wrapper">
