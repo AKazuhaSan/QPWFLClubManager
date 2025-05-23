@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Suggestion.css">
+</head>
+<body>
+    <script type="module" src="../i18n"></script>
+     <script type="module" src="Suggestion.ts"></script>
+    <form>
+        <input id="Anonymous" type="checkbox" name="Anonymous"> 
+        <span data-i18n="anonymous"></span>
+        <br>
+        <div id="usernameBox">
+            <span>你的姓名</span>
+            <input id="usernameInput" type="text">
+        </div>
+        <br/>
+        <p>在下方输入您的意见</p>
+        <textarea id="Content"></textarea>
+        <br>
+        <button id="Submit">提</button>
+    </form>
+</body>
+</html>
