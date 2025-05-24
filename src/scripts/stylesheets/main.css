@@ -210,3 +210,9 @@ h1 {
     color: #888;
     font-style: italic;
 }
+
+@media (max-width: 600px) {
+  .Title {
+    display: none;
+  }
+}
