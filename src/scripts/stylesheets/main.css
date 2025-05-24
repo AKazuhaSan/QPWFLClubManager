@@ -50,12 +50,7 @@ a {
     height: 100px;
     margin-right: 16px;
 }
-.school-name-block {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-    margin-right: 15px;
-}
+
 .school-cn {
     font-size: 18px;
     font-weight: bold;

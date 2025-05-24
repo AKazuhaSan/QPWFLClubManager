@@ -1,67 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/x-icon" href="WFL-logo.png">
-    <script type="module" src="src/scripts/main.ts"></script>
-    <script type="module" src="src/scripts/style.ts"></script>
-    <script type="module" src="/src/scripts/i18n.ts"></script>
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="title"></title>
-  
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: fit-content;">
-    <div class="container-fluid" >
+
+<head>
+  <link rel="icon" type="image/x-icon" href="WFL-logo.webp">
+  <script type="module" src="src/scripts/main.ts"></script>
+  <script type="module" src="src/scripts/style.ts"></script>
+  <script type="module" src="/src/scripts/i18n.ts"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title"></title>
+
+</head>
+
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: fit-content; width:100%;">
       <div class="navbar-left">
-        <a href="https://qphs.shwfl.edu.cn/" target="_blank">
-          <img src="WFL-logo.png" alt="WFL Logo" class="navbar-logo">
-      </a>
-
-      <div class="school-name-block">
-        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
-        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
-      </div>
-
-      <div class="school-name-block" style="margin-left: 15px;">
-        <div class="school-cn">Codecraft</div>
-      </div>
-
-      <div class="vr" style="position: relative; margin: 32px;"></div>
-      
-      <button id="home" style="margin-right: 24px;" data-i18n="home" class="btn btn-sm btn-secondary"></button>
-
-      <button id="OfficalButton" style="margin-left: 24x;" class="btn btn-sm btn-secondary"  data-i18n="offical"></button>
-
-      <div class="btn-group" style="margin-left: 24px; ">
-        <button data-i18n="detail" class="btn btn-secondary btn-sm" type="button">
-        </button>
         
-        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
-      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" data-i18n="creativity" href="Creativity.html"></a></li>
-          <li><a class="dropdown-item" data-i18n="pe" href="#"></a></li>
-          <li><a class="dropdown-item" data-i18n="social" href="#"></a></li>
-          <li><a class="dropdown-item" data-i18n="academic" href="#"></a></li>
-      </ul>
-      </div>
+        
+        <div style="display: flex; gap: 12px;">
+          <!-- 学校LOGO和Title -->
+        <a href="https://qphs.shwfl.edu.cn/" target="_blank" style="flex: 1;"> 
+          <img src="WFL-logo.webp" alt="WFL Logo" class="navbar-logo">
+        </a>
 
-      <button id="Suggestion" style="margin-left: 24px;" data-i18n="idea" class="btn btn-secondary btn-sm" type="button">
-      </button>
+       <div style="flex: 8; display: flex; flex-direction: column; justify-content: center; ">
+  <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+  <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+</div>
+        <!-- 学校LOGO和Title -->
 
-      <button id="changeLanguage" style="margin-left: 24px;" class="btn btn-secondary btn-sm" type="button">
-        中文/EN
-      </button>
-    </div>
+        <!-- 社团LOGO -->
+        <!-- <div class="school-name-block" style="margin-left: 15px;">
+          <div class="school-cn">Codecraft</div>
+        </div> -->
+        <!-- 社团LOGO -->
+
+          <div class="vr"></div>
+          <button id="home" data-i18n="home" style="flex: 1;" class="btn btn-sm btn-secondary"></button>
+
+          <button id="OfficalButton" class="btn btn-sm btn-secondary" style="flex: 1;" data-i18n="offical"></button>
+
+          <div class="btn-group">
+            <button data-i18n="detail" class="btn btn-secondary btn-sm" type="button">
+            </button>
+
+            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" data-i18n="creativity" href="Creativity.html"></a></li>
+              <li><a class="dropdown-item" data-i18n="pe" href="#"></a></li>
+              <li><a class="dropdown-item" data-i18n="social" href="#"></a></li>
+              <li><a class="dropdown-item" data-i18n="academic" href="#"></a></li>
+            </ul>
+          </div>
+
+          <button id="Suggestion" data-i18n="idea" class="btn btn-secondary btn-sm" style="flex: 1;" type="button">
+          </button>
+
+          <button id="changeLanguage" class="btn btn-secondary btn-sm" type="button" style="flex: 1;">中文/EN</button>
+        </div>
   </nav>
-
+  <!-- 导航栏 -->
 
   <h1 data-i18n="notice">🪧公告栏</h1>
-  
+
   <div class="notice-board">
     <div class="notice">📌 本周五放学后社团不开放，因校区临时施工，请各位同学互相转告并提前安排社团计划。</div>
     <div class="notice">📢 校园开放日将于本月20日举行，欢迎家长预约参与。活动包括社团展示、师生互动和校园导览。</div>
@@ -79,5 +87,6 @@
   </div>
 
 
-  </body>
+</body>
+
 </html>
