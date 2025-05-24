@@ -1,18 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/x-icon" href="WFL-logo.png">
-    <script type="module" src="src/scripts/main.ts"></script>
-    <script type="module" src="src/scripts/style.ts"></script>
-    <script type="module" src="/src/scripts/i18n.ts"></script>
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="title"></title>
-  
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: fit-content;">
+<head>
+    <meta charset="UTF-8">
+   
+      <script type="module" src="/src/scripts/i18n.ts"></script>
+      <script type="module" src="/src/scripts/style.ts"></script>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: fit-content;">
     <div class="container-fluid" >
       <div class="navbar-left">
         <a href="https://qphs.shwfl.edu.cn/" target="_blank">
@@ -43,7 +41,7 @@
         </button>
       
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" data-i18n="creativity" href="Creativity.html"></a></li>
+          <li><a class="dropdown-item" data-i18n="creativity" href="#"></a></li>
           <li><a class="dropdown-item" data-i18n="pe" href="#"></a></li>
           <li><a class="dropdown-item" data-i18n="social" href="#"></a></li>
           <li><a class="dropdown-item" data-i18n="academic" href="#"></a></li>
@@ -59,25 +57,7 @@
     </div>
   </nav>
 
-
-  <h1 data-i18n="notice">🪧公告栏</h1>
-  
-  <div class="notice-board">
-    <div class="notice">📌 本周五放学后社团不开放，因校区临时施工，请各位同学互相转告并提前安排社团计划。</div>
-    <div class="notice">📢 校园开放日将于本月20日举行，欢迎家长预约参与。活动包括社团展示、师生互动和校园导览。</div>
-    <div class="notice">🔔 请各社团提交下学期计划</div>
-  </div>
-
-  <h1 data-i18n="model">优秀社团</h1>
-
-  <div id="ExClubs" class="tab-content active">
-    <div class="scroll-wrapper">
-      <div class="fade-left"></div>
-      <div class="fade-right"></div>
-      <div class="scroll-container"></div>
-    </div>
-  </div>
-
-
-  </body>
+  <script type="module" src="/src/scripts/Clubs.ts"></script>
+  <div id="conrainer"></div>
+</body>
 </html>

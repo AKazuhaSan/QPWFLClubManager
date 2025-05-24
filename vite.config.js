@@ -5,7 +5,8 @@ export default defineConfig({
     plugins: [VirtualHtmlPlugin({
         pages: {
             index: '/index.html',
-            Suggestion: '/src/views/Suggestion.html'
+            Suggestion: '/src/views/Suggestion.html',
+            Creativity: '/src/views/Creativity.html'
         },
         indexPage: 'index'
     })],
